@@ -7,11 +7,13 @@ import reactor.core.publisher.Mono;
 @RestController
 public class GreetingController {
 
+// Default
 //    @GetMapping("/")
 //    String helloWorld() {
 //        return "Hello World";
 //    }
 
+    // Webflux
     @GetMapping("/")
     public Mono<String> helloWorld() {
         return Mono.just("Hello World");
